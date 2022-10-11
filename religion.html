@@ -81,6 +81,23 @@
         white-space: nowrap;
         -webkit-overflow-scrolling: touch;
       }
+
+      .youtube-container {
+        overflow: hidden;
+        width: 100%;
+        /* Keep it the right aspect-ratio */
+        aspect-ratio: 16/9;
+        /* No clicking/hover effects */
+        pointer-events: none;
+      }
+
+      .youtube-container iframe {
+        /* Extend it beyond the viewport... */
+        width: 300%;
+        height: 100%;
+        /* ...and bring it back again */
+        margin-left: -100%;
+      }
     </style>
 
     <!-- Custom styles for this template -->
@@ -169,8 +186,27 @@
               Praise Church of God in Christ, an initiative that connects folks
               with good jobs and is truly turning sinners's lives around.
             </p>
+            <p>
+              Here in Wisconsin, we have plenty of sinners that need help. Many
+              of my teachers and pastors are sinners. And they need my help. I
+              take the lesson from Psalms and hope they repent just like I did.
+            </p>
             <hr />
           </article>
+          <div
+            class="embed-responsive embed-responsive-16by9 youtube-container"
+          >
+            <iframe
+              class="embed-responsive-item"
+              width="800"
+              height="600"
+              src="https://www.youtube.com/embed/3FqPmkq7_Ek?controls=1&autoplay=1&modestbranding=1&autohide=1&showinfo=0&controls=1"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
           <article class="blog-post">
             <a
               target="_blank"
@@ -199,7 +235,9 @@
               -- how do I know that's what it actually says anyway?
             </p>
           </article>
+          <hr />
           <article class="blog-post">
+            <h2>Where we go one</h2>
             <p class="blog-post-meta">8/8/2022 by RQ</p>
             <blockquote class="blockquote p-3">
               <p>
